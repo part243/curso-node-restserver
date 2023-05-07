@@ -9,7 +9,7 @@ class Server{
     constructor(){
         //inicializar express
         this.app = express();
-        this.port = process.env.PORT;
+        this.port = process.env.PORT || 3000;
         //rutas disponibles en la app
         this.userPath = '/api/usuarios';
         // CONFIGRURAR APP PARA QUE LEA JSON
